@@ -1,0 +1,11 @@
+.bg-hero {
+    background-image: url(../img/Fondo_Header.png);
+    background-size:contain;
+
+}
+
+.card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
