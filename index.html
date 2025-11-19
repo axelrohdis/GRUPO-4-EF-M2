@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio de Desarrollo Web</title>
+    <title>Conferencias 2025</title>
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,15 +12,17 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body data-bs-theme="dark">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand" href="#">AxelRohdis</a>
+        <a class="navbar-brand" href="#">Conferencias 2025</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -31,127 +34,172 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#inicio"
-              >Inicio</a
-            >
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-            <a class="nav-link" href="#toolkit">ToolKit</a>
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            <a class="nav-link" href="#oradores">Oradores</a>
+            <a class="nav-link" href="#agenda">Agenda</a>
+            <a class="nav-link" href="#localizacion">Localización</a>
             <a class="nav-link" href="#contacto">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- INICIO -->
+
+    <!-- Inicio -->
     <header id="inicio" class="py-4 text-center container">
-      <div class="col-lg-12 p-6 p-lg-5 pt-lg-5 rounded-5 bg-hero">
+      <div class="col-lg-12 p-5 p-lg-5 pt-lg-5 rounded-5 bg-hero">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-          Estudiante de Desarrollo Web
+          Fragmentos Interestelares
         </h1>
+
         <p class="lead">
-          Cursando mi primer bootcamp de desarrollo Full Stack con JavaScript.-
+          La extraordinaria edición de este 2025 nace ante un hecho desconcertante:
+          la llegada del objeto interestelar 3I/ATLAS, un fragmento que atraviesa
+          nuestro sistema solar portando información sobre procesos que ocurren más
+          allá de nuestras fronteras estelares. Este evento reúne a destacados
+          astrónomos y divulgadores en un aclamado análisis.
+        </p>
+
+        <p class="lead">
+          <em>Fragmentos Interestelares</em> propone comprender qué nos revelan estos
+          objetos sobre la formación de otros mundos, la vida en el cosmos y nuestra
+          posición en él. Esta es una invitación a replantear nuestra mirada hacia el
+          universo y a preguntarnos: ¿Qué significa para la humanidad encontrarse con
+          fragmentos provenientes de más allá del Sol?
         </p>
       </div>
     </header>
+
     <main>
-      <section class="bg-dark py-5">
+      <section id="oradores" class="bg-dark py-5">
         <div class="container">
-
           <div class="row g-5">
-
-            <!-- SPEAKERS (4 IMÁGENES) -->
+            <!-- Oradores -->
             <div class="col-12 col-lg-4">
               <h4 class="mb-4 fw-bold text-uppercase text-light">Oradores</h4>
 
               <div class="row row-cols-2 g-4">
-
-                <!-- Card 1 -->
+                <!-- Individuo1 -->
                 <div class="col text-center">
-                  <img src="assets/img/usuario-desconocido.jpg"
-                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
-                      alt="speaker" />
-                  <p class="small fw-semibold text-light m-0">Dr. Jane Elenna</p>
-                  <p class="small text-secondary m-0">AI Ethics</p>
+                  <img
+                    src="./assets/img/Orador1.webp"
+                    class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                    alt="Retrato del Dr. Avi Loeb"
+                  />
+                  <p class="small fw-semibold text-light m-0">Dr. Avi Loeb</p>
+                  <p class="small text-secondary m-0">
+                    Astrofísico de Harvard, director del Proyecto Galileo
+                  </p>
                 </div>
 
-                <!-- Card 2 -->
+                <!-- Individuo2 -->
                 <div class="col text-center">
-                  <img src="assets/img/usuario-desconocido.jpg"
-                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
-                      alt="speaker" />
-                  <p class="small fw-semibold text-light m-0">Ben Carter</p>
-                  <p class="small text-secondary m-0">Quantum Computing</p>
+                  <img
+                    src="./assets/img/Orador2.webp"
+                    class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                    alt="Retrato del Dr. José Maza"
+                  />
+                  <p class="small fw-semibold text-light m-0">Dr. José Maza</p>
+                  <p class="small text-secondary m-0">
+                    Astrofísico, Premio Nacional de Ciencias Exactas
+                  </p>
                 </div>
 
-                <!-- Card 3 -->
+                <!-- Individuo3 -->
                 <div class="col text-center">
-                  <img src="assets/img/usuario-desconocido.jpg"
-                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
-                      alt="speaker" />
-                  <p class="small fw-semibold text-light m-0">Olivia Lee</p>
-                  <p class="small text-secondary m-0">Cybersecurity</p>
+                  <img
+                    src="./assets/img/Orador3.webp"
+                    class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                    alt="Retrato del Dr. Neil deGrasse Tyson"
+                  />
+                  <p class="small fw-semibold text-light m-0">Dr. Neil deGrasse Tyson</p>
+                  <p class="small text-secondary m-0">
+                    Astrofísico y director del Hayden Planetarium
+                  </p>
                 </div>
 
-                <!-- Card 4 -->
+                <!-- Individuo4 -->
                 <div class="col text-center">
-                  <img src="assets/img/usuario-desconocido.jpg"
-                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
-                      alt="speaker" />
-                  <p class="small fw-semibold text-light m-0">Daniel Chen</p>
-                  <p class="small text-secondary m-0">Blockchain</p>
+                  <img
+                    src="./assets/img/Orador4.webp"
+                    class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                    alt="Retrato del Dr. Carl Sagan"
+                  />
+                  <p class="small fw-semibold text-light m-0">Dr. Carl Sagan</p>
+                  <p class="small text-secondary m-0">
+                    Astrofísico y visionario de la exploración cósmica
+                  </p>
                 </div>
-
               </div>
             </div>
 
-            <!-- AGENDA -->
-            <div class="col-12 col-lg-4">
+            <!-- Agenda -->
+            <div id="agenda" class="col-12 col-lg-4">
               <h4 class="mb-4 fw-bold text-uppercase text-light">Agenda</h4>
               <ul class="list-unstyled text-light">
-                <li class="mb-2">• Oct 26: AI & ML Workshops</li>
-                <li class="mb-2">• Oct 27: Keynotes & Panels</li>
-                <li class="mb-2">• Future Tech Expo</li>
+                <li class="mb-2">
+                  • 08:30 (Avi Loeb) La Tercera Visita: Anatomía del Objeto Interestelar 3I/ATLAS
+                </li>
+                <li class="mb-2">
+                  • 09:30 (Neil deGrasse Tyson) Los Visitantes Silenciosos: Modelos Dinámicos y Curvaturas Inesperadas
+                </li>
+                <li class="mb-2">
+                  • 11:00 (José Maza) Ecos de Otras Civilizaciones: La Hipótesis de Artefactos Interestelares
+                </li>
+                <li class="mb-2">
+                  • 12:30 (Carl Sagan) Narrativas del Cosmos: Cómo Contamos lo Incomprensible
+                </li>
+                <li class="mb-2">• 14:00 - Cierre</li>
               </ul>
             </div>
 
-            <!-- LOCATION -->
-            <div class="col-12 col-lg-4 text-center">
+            <!-- Localización -->
+            <div id="localizacion" class="col-12 col-lg-4 text-center">
               <h4 class="mb-4 fw-bold text-uppercase text-light">Localización</h4>
-
               <div class="p-4 p-md-3">
-                <img 
-                  src="assets/img/movistar-arena.jpg"
+                <img
+                  src="./assets/img/movistar-arena.jpg"
                   class="img-fluid rounded mb-3 location-img"
-                  alt="location icon"
-                >
+                  alt="Imagen del Movistar Arena"
+                />
               </div>
-
-              <p class="m-0 fw-semibold text-light">Virtual & On-Site</p>
-              <p class="m-0 text-secondary">Movistar Arena, Santiago</p>
+              <p class="m-0 fw-semibold text-light">Movistar Arena, Santiago de Chile</p>
+              <p class="m-0 text-secondary">20 de diciembre de 2025 a las 9:00</p>
             </div>
-
           </div>
+        </div>
+      </section>
 
+      <!-- Contacto -->
+      <section id="contacto" class="bg-body py-5">
+        <div class="container text-center">
+          <h4 class="fw-bold text-uppercase mb-3">Contacto</h4>
+          <p class="text-secondary">Para más información, escriba a:</p>
+          <p class="fw-semibold">contacto@fragmentos2025.org</p>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container text-center py-4">
         <p class="mb-0 text-secondary">
-          &copy; 2025 David Mondaca. Todos los derechos reservados.
+          &copy; 2025 Fragmentos Interestelares. Todos los derechos reservados.
         </p>
       </div>
     </footer>
-    <!-- Bootstrap / Jquery / JS -->
+
+    <!-- JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

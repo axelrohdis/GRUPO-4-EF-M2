@@ -7,3 +7,10 @@
 textarea.form-control {
     resize: none;
 }
+
+.h1 {
+    color: gradiant(160deg, #c2c2c2, #feb47b);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
