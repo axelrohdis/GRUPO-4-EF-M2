@@ -4,8 +4,40 @@
     box-sizing: border-box;
 }
 
+
 textarea.form-control {
     resize: none;
+}
+
+.navbar {
+    margin-top: 0;
+    padding-top: 0;
+    background: transparent;
+    width: 100%;
+    z-index: 10;
+  }
+
+.bg-hero {
+    min-height: 60vh;
+    margin-top: -46px;
+    padding-top: 46px;
+    background-image: url('../img/Cometa\ 3I\ Atlas.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-color: #c2c2c2;
+}
+
+.bg-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+.bg-hero {
+    position: relative;
+    z-index: 2;
 }
 
 .h1 {
