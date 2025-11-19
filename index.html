@@ -1,127 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio de Desarrollo Web</title>
-<!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
 
-<body>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">AxelRohdis</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-          <a class="nav-link" href="#proyectos">Proyectos</a>
-          <a class="nav-link" href="#toolkit">ToolKit</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
+  <body data-bs-theme="dark">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">AxelRohdis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#inicio"
+              >Inicio</a
+            >
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#toolkit">ToolKit</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- INICIO -->
-  <header id="inicio">
-    <div class="col-lg-12 p-6 p-lg-5 pt-lg-5 rounded-5 bg-hero"> 
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Estudiante de Desarrollo Web</h1> 
-        <p class="lead">Cursando mi primer bootcamp de desarrollo Full Stack con JavaScript.-</p> 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> 
-        </div> 
-    </div>
-  </header>
-  <!-- PROYECTOS -->
-  <div class="container mt-5">
-    <div class="row row">
-    <section id="proyectos" class="col">
-            <h2>Proyectos</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="./assets/img/IMG_1229.png" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Proyecto 1</h5>
-                      <p class="card-text">En proceso.</p>
-                    </div>
-                  </div>
+    </nav>
+    <!-- INICIO -->
+    <header id="inicio" class="py-4 text-center container">
+      <div class="col-lg-12 p-6 p-lg-5 pt-lg-5 rounded-5 bg-hero">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+          Estudiante de Desarrollo Web
+        </h1>
+        <p class="lead">
+          Cursando mi primer bootcamp de desarrollo Full Stack con JavaScript.-
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="bg-dark py-5">
+        <div class="container">
+
+          <div class="row g-5">
+
+            <!-- SPEAKERS (4 IMÁGENES) -->
+            <div class="col-12 col-lg-4">
+              <h4 class="mb-4 fw-bold text-uppercase text-light">Oradores</h4>
+
+              <div class="row row-cols-2 g-4">
+
+                <!-- Card 1 -->
+                <div class="col text-center">
+                  <img src="assets/img/usuario-desconocido.jpg"
+                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                      alt="speaker" />
+                  <p class="small fw-semibold text-light m-0">Dr. Jane Elenna</p>
+                  <p class="small text-secondary m-0">AI Ethics</p>
                 </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="./assets/img/IMG_1229.png" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Proyecto 2</h5>
-                      <p class="card-text">En proceso.</p>
-                    </div>
-                  </div>
+
+                <!-- Card 2 -->
+                <div class="col text-center">
+                  <img src="assets/img/usuario-desconocido.jpg"
+                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                      alt="speaker" />
+                  <p class="small fw-semibold text-light m-0">Ben Carter</p>
+                  <p class="small text-secondary m-0">Quantum Computing</p>
                 </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="./assets/img/IMG_1229.png" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Proyecto 3</h5>
-                      <p class="card-text">En proceso.</p>
-                    </div>
-                  </div>
+
+                <!-- Card 3 -->
+                <div class="col text-center">
+                  <img src="assets/img/usuario-desconocido.jpg"
+                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                      alt="speaker" />
+                  <p class="small fw-semibold text-light m-0">Olivia Lee</p>
+                  <p class="small text-secondary m-0">Cybersecurity</p>
                 </div>
+
+                <!-- Card 4 -->
+                <div class="col text-center">
+                  <img src="assets/img/usuario-desconocido.jpg"
+                      class="rounded-circle img-fluid mb-2 w-50 w-md-75 w-lg-100"
+                      alt="speaker" />
+                  <p class="small fw-semibold text-light m-0">Daniel Chen</p>
+                  <p class="small text-secondary m-0">Blockchain</p>
+                </div>
+
               </div>
-    </section>
-    </div>
-    <!-- ToolKit -->
-    <div class="container mt-5 col-lg-12">
-        <div class="row">
-        <section Id= "toolkit" class="col">
-            <h3>ToolKit</h3>
-            <div class="card">
-                <img src="./assets/img/Fondo Toolkit.png" class="card-img-top">
-                <div class="card-body">
-                  <p class="card-text">Visual Studio Code / Bootstrap / GitHub.</p>
-                </div>
+            </div>
+
+            <!-- AGENDA -->
+            <div class="col-12 col-lg-4">
+              <h4 class="mb-4 fw-bold text-uppercase text-light">Agenda</h4>
+              <ul class="list-unstyled text-light">
+                <li class="mb-2">• Oct 26: AI & ML Workshops</li>
+                <li class="mb-2">• Oct 27: Keynotes & Panels</li>
+                <li class="mb-2">• Future Tech Expo</li>
+              </ul>
+            </div>
+
+            <!-- LOCATION -->
+            <div class="col-12 col-lg-4 text-center">
+              <h4 class="mb-4 fw-bold text-uppercase text-light">Localización</h4>
+
+              <div class="p-4 p-md-3">
+                <img 
+                  src="assets/img/movistar-arena.jpg"
+                  class="img-fluid rounded mb-3 location-img"
+                  alt="location icon"
+                >
               </div>
-        </section>
+
+              <p class="m-0 fw-semibold text-light">Virtual & On-Site</p>
+              <p class="m-0 text-secondary">Movistar Arena, Santiago</p>
+            </div>
+
+          </div>
+
         </div>
-    </div>
-    <!-- Contacto -->
-    <div class="container mt-5 col-lg-12">
-        <section Id= "contacto" class="col">
-            <h5>Contacto</h5>
-            <form id="contactForm" action="#" method="post">
-                <fieldset><legend>Información Personal</legend>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
-                    <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Mensaje:</legend>
-                </fieldset>
-                <div class="mb-3">
-                  <textarea class="form-control" id="message" rows="4"></textarea>
-                </div>
-                <div id="formMessage" class="mt-2"></div>
-                <div class="mb-5">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <button type="reset" class="btn btn-secondary">Limpiar</button>
-                </div>
-            </form>
-        </section>
-    </div>
-  <!-- Bootstrap / Jquery / JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+      </section>
+    </main>
+    <footer>
+      <div class="container text-center py-4">
+        <p class="mb-0 text-secondary">
+          &copy; 2025 David Mondaca. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap / Jquery / JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous">
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
