@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const btnContacto = document.getElementById("btn-contacto");
   const modal = document.querySelector(".modal");
   const modalContent = document.querySelector(".div-content-form");
@@ -10,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const divResults = document.querySelector(".div-results");
 
   const sanitize = (str) => {
-    return str
-      .trim()
-      .replace(/[<>]/g, "");
+    return str.trim().replace(/[<>]/g, "");
   };
 
   btnContacto.addEventListener("click", () => {
@@ -66,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (errors.length > 0) {
       divResults.innerHTML = `
         <div class="alert alert-danger mt-3">
-          ${errors.map(err => `<p class="m-0">${err}</p>`).join("")}
+          ${errors.map((err) => `<p class="m-0">${err}</p>`).join("")}
         </div>
       `;
       return;
@@ -84,5 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
     inputEmail.value = "";
     textArea.value = "";
   });
-
 });

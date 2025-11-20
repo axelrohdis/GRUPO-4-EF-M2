@@ -1,6 +1,7 @@
 const target = new Date("2025-12-20T09:00:00"); // Target: 21 December 2025, at 09:00:00 hora local
 
-(function setEventLabel() {                   // Formatea fecha + hora (usa el mismo objeto `target`)
+(function setEventLabel() {
+  // Formatea fecha + hora (usa el mismo objeto `target`)
   const span = document.getElementById("eventDate");
   if (!span) return;
   const datePart = target.toLocaleDateString("es-CL", {
