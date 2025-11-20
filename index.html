@@ -41,9 +41,6 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#inicio"
-              >Inicio</a
-            >
             <a class="nav-link" href="#oradores">Oradores</a>
             <a class="nav-link" href="#agenda">Agenda</a>
             <a class="nav-link" href="#localizacion">Localización</a>
@@ -55,26 +52,17 @@
 
     <!-- Inicio -->
     <header id="inicio" class="text-center">
-      <div class="col-lg-12 p-5 py-6 bg-hero">
+      <div class="col-lg-12 p-5 py-6 bg-hero text-center">
         <h1 class="display-4 mb-3 fw-bold lh-1 text-body-emphasis">
           Fragmentos Interestelares
         </h1>
 
         <p class="lead">
-          La extraordinaria edición de este 2025 nace ante un hecho
-          desconcertante: la llegada del objeto interestelar 3I/ATLAS, un
-          fragmento que atraviesa nuestro sistema solar portando información
-          sobre procesos que ocurren más allá de nuestras fronteras estelares.
-          Este evento reúne a destacados astrónomos y divulgadores en un
-          aclamado análisis.
+          La extraordinaria edición de este 2025 nace ante la llegada del objeto interestelar 3I/ATLAS.
         </p>
 
         <p class="lead">
-          <em>Fragmentos Interestelares</em> propone comprender qué nos revelan
-          estos objetos sobre la formación de otros mundos, la vida en el cosmos
-          y nuestra posición en él. Esta es una invitación a replantear nuestra
-          mirada hacia el universo y a preguntarnos: ¿Qué significa para la
-          humanidad encontrarse con fragmentos provenientes de más allá del Sol?
+          <em>Fragmentos Interestelares</em> propone comprender qué nos revelan estos objetos sobre la formación de otros mundos, la vida en el cosmos y nuestra posición en él.
         </p>
       </div>
     </header>
@@ -184,18 +172,42 @@
               <p class="m-0 fw-semibold text-light">
                 Movistar Arena, Santiago de Chile
               </p>
-              <p class="m-0 text-secondary">
-                20 de diciembre de 2025 a las 9:00
-              </p>
+              <p class="note"> Evento: <span id="eventDate"></span></p>
             </div>
           </div>
         </div>
       </section>
 
+      <section aria-label="Cuenta regresiva" style="margin-top:18px">
+        <p class="m-0 fw-semibold text-light text-center">
+                Reserva tu plaza, el evento comienza en:
+              </p>
+  <div id="countdown" class="countdown">
+    <div class="card" id="daysCard">
+      <div class="number" id="days">0</div>
+      <div class="label">Días</div>
+    </div>
+    <div class="card">
+      <div class="number" id="hours">00</div>
+      <div class="label">Horas</div>
+    </div>
+    <div class="card">
+      <div class="number" id="minutes">00</div>
+      <div class="label">Minutos</div>
+    </div>
+    <div class="card">
+      <div class="number" id="seconds">00</div>
+      <div class="label">Segundos</div>
+    </div>
+  </div>
+</section>
+
       <!-- Contacto -->
       <section id="contacto" class="bg-body py-5">
-
-      <button class="btn btn-primary my-4 mx-auto d-block" id="btn-contacto">Enviar un mensaje</button>
+<div class="container text-center">
+          <h4 class="fw-bold text-uppercase mb-3">Contacto</h4>
+        </div>
+      <button class="btn btn-primary my-4 mx-auto d-block" id="btn-contacto">Ingresa al registro</button>
 
 
       <div class="modal">
@@ -223,15 +235,7 @@
             </div>
           </form>
         </div>
-      </div>
-        
-
-
-        <div class="container text-center">
-          <h4 class="fw-bold text-uppercase mb-3">Contacto</h4>
-          <p class="text-secondary">Para más información, escriba a:</p>
-          <p class="fw-semibold">contacto@fragmentos2025.org</p>
-        </div>
+      </div>        
       </section>
     </main>
 
@@ -251,5 +255,6 @@
     ></script>
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/countdown.js"></script>
   </body>
 </html>
