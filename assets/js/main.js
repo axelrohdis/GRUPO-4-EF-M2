@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnContacto = document.getElementById("btn-contacto");
   const modal = document.querySelector(".modal");
   const modalContent = document.querySelector(".div-content-form");
   const form = document.getElementById("formMessage");

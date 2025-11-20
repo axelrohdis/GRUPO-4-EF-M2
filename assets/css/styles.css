@@ -112,6 +112,10 @@ body {
   }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* cuenta regresiva */
 :root {
   --bg: #0f1724;

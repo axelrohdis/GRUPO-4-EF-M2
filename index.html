@@ -14,7 +14,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
-
+ 
 <body data-bs-theme="dark">
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
@@ -28,6 +28,7 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+          <a class="nav-link" href="#sobre-evento">Sobre el Evento</a>
           <a class="nav-link" href="#oradores">Oradores</a>
           <a class="nav-link" href="#agenda">Agenda</a>
           <a class="nav-link" href="#localizacion">Localización</a>
@@ -52,17 +53,58 @@
         <em>Fragmentos Interestelares</em> propone comprender qué nos revelan estos objetos sobre la formación de otros
         mundos, la vida en el cosmos y nuestra posición en él.
       </p>
+      <button class="btn btn-primary my-5 mx-auto d-block" id="btn-contacto">Ingresa al registro</button>
+    </div>
+<!-- Formulario de Registro -->
+    <div class="modal">
+      <div class="div-content-form">
+        <form id="formMessage" action="" class="p-3 mx-auto mb-5">
+          <h4 class="mb-4 w-100">Registrame</h4>
+          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
+            <label for="inputName">Nombre:</label>
+            <input type="text" id="inputName" class="ms-3 w-100 ps-1 pe-4" placeholder="Nombre completo" minlength="3"
+              maxlength="50" required>
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
+            <label for="inputEmail">Email:</label>
+            <input type="email" id="inputEmail" class="ms-2 ps-1 pe-4" placeholder="ejemplo@correo.com" required>
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
+          <div class="w-100 mr-3 d-flex justify-content-between">
+            <label for="textArea">Cargo y puesto:</label>
+            <textarea name="textArea" id="textArea" class="w-100 p-1" placeholder="Escriba su cargo/puesto aquí."
+              minlength="12" maxlength="200" required></textarea>
+          </div>
+          <div class="div-results"></div>
+          <div class="div-buttons p-2 mt-4 d-flex justify-content-evenly">
+            <button type="submit" class="btn btn-primary" id="btn-send">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+          </div>
+        </form>
+      </div>
     </div>
   </header>
 
   <main>
+         <!-- Sobre el Evento -->
+    <section id="sobre-evento">
+       <div class="col-lg-12 p-5 py-6 text-center">
+         <h2 class="mb-4 fw-bold text-uppercase text-light">
+            Sobre el Evento
+         </h2>          
+         <p>La edición 2025 de Fragmentos Interestelares llega en un momento sin precedentes: la reciente detección del objeto interestelar 3I/ATLAS, el tercero confirmado en la historia, abre una ventana única para profundizar en la ciencia de los visitantes extrasolares.</p>
+         <p>Este encuentro reúne a destacados astrónomos, astrofísicos, geocientíficos y divulgadores para analizar, desde una perspectiva multidisciplinaria, qué pueden revelarnos estos cuerpos sobre la formación y evolución de sistemas planetarios, la química primordial del universo y los escenarios potenciales para el surgimiento de la vida más allá del Sistema Solar.</p>  
+         <p>A través de conferencias magistrales, paneles especializados y sesiones de discusión, los participantes explorarán las implicancias científicas y filosóficas de estos mensajeros cósmicos: desde la dinámica de su trayectoria hiperbólica y la caracterización espectral de sus materiales, hasta su rol como portadores de información sobre procesos ocurridos en regiones remotas de la Vía Láctea.</p>              
+         <p>Fragmentos Interestelares 2025 es una invitación a sumergirse en la frontera de la astrofísica moderna y a comprender cómo cada visita interestelar amplía nuestro mapa del cosmos y redefine nuestra posición en él.</p>
+       </div>  
+    </section>
     <section id="oradores">
       <div class="container">
         <div class="row g-4">
-
           <!-- Oradores -->
           <div class="col-12 col-lg-4 p-4">
-            <h4 class="mb-4 fw-bold text-uppercase text-light">Oradores</h4>
+            <h3 class="mb-4 fw-bold text-uppercase text-light">Oradores</h3>
 
             <div class="row row-cols-2 g-4">
               <!-- Individuo1 -->
@@ -135,9 +177,7 @@
 
           <!-- Localización -->
           <div id="localizacion" class="col-12 col-lg-4 p-4 text-center">
-            <h4 class="mb-4 fw-bold text-uppercase text-light">
-              Localización
-            </h4>
+            <h5 class="mb-4 fw-bold text-uppercase text-light">Localización</h5>
             <div class="p-md-3">
               <img src="./assets/img/movistar-arena.jpg" class="img-fluid rounded mb-3 location-img"
                 alt="Imagen del Movistar Arena" />
@@ -178,42 +218,30 @@
     <!-- Contacto -->
     <section id="contacto" class="bg-body py-5">
       <div class="container text-center">
-        <h4 class="fw-bold text-uppercase mb-3">Contacto</h4>
-      </div>
-      <button class="btn btn-primary my-4 mx-auto d-block" id="btn-contacto">Ingresa al registro</button>
-
-
-      <div class="modal">
-        <div class="div-content-form">
-          <form id="formMessage" action="" class="p-3 mx-auto mb-5">
-            <h4 class="mb-4 w-100">Escribeme un mensaje</h4>
-            <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-              <label for="inputName">Nombre:</label>
-              <input type="text" id="inputName" class="ms-3 w-100 ps-1 pe-4" placeholder="Nombre completo" minlength="3"
-                maxlength="50" required>
-              <i class="bi bi-person-fill"></i>
-            </div>
-            <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-              <label for="inputEmail">Email:</label>
-              <input type="email" id="inputEmail" class="ms-3 ps-1 pe-4" placeholder="ejemplo@correo.com" required>
-              <i class="bi bi-envelope-at-fill"></i>
-            </div>
-            <div class="w-100 d-flex justify-content-between">
-              <label for="textArea">Cargo y puesto:</label>
-              <textarea name="textArea" id="textArea" class="w-100 ms-3 p-1" placeholder="Escriba su cargo/puesto aquí."
-                minlength="12" maxlength="200" required></textarea>
-            </div>
-            <div class="div-results"></div>
-            <div class="div-buttons p-2 mt-4 d-flex justify-content-evenly">
-              <button type="submit" class="btn btn-primary" id="btn-send">Enviar</button>
-              <button type="reset" class="btn btn-light">Limpiar</button>
-            </div>
-          </form>
+        <h6 class="fw-bold text-uppercase mb-3">Contacto</h6>
+        <div class="text-center pe-3">
+        <ul class="nav col justify-content-center list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary mr-5" href="#" aria-label="Instagram">
+              <i class="bi bi-instagram" style="font-size: 24px;"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary mr-5" href="#" aria-label="Facebook">
+              <i class="bi bi-facebook" style="font-size: 24px;"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary mr-5" href="#" aria-label="Twitter-X">
+              <i class="bi bi-twitter-x" style="font-size: 24px;"></i>
+            </a>
+          </li>
         </div>
+        </ul>
       </div>
     </section>
   </main>
-
+    <!-- Footer -->
   <footer>
     <div class="container text-center py-4">
       <p class="mb-0 text-secondary">
